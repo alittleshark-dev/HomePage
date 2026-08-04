@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>Homepage</title>
+        <script src="./js/script.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="bodybox">
+            <!-- 1. 时间区域 -->
+            <div class="time-container">
+                <!-- 这里的内容会被JS自动替换，不用动 -->
+                <div id="current-time" class="time">12:00:00</div>
+                <div id="current-date" class="date">2026-04-25 星期六</div>
+            </div>
+
+            <!-- 2. 搜索框区域 -->
+            <div class="search-container">
+                <form action="https://www.bing.com/search" method="get" target="_blank">
+                    <input type="text" name="q" placeholder="Search with Bing...">
+                </form>
+            </div>
+
+            <!-- 3. 按钮区域 -->
+            <div class="button-container">
+                <button onclick="openWin('www.bilibili.com')">BiliBili</button>
+                <button onclick="openWin('www.bing.com')">Bing</button>
+                <button onclick="openWin('www.qianwen.com')">Qwen AI</button>
+                <button onclick="openWin('www.runoob.com')">Runoob</button>
+                <button onclick="openWin('www.book.sciencereading.cn')">Computer Science</button>
+            </div>
+        </div>
+    </body>
+</html>

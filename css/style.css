@@ -1,0 +1,94 @@
+@font-face {
+    font-family: JunJunTi;
+    src: url(../font/JingNanJunJunTi-JinNanJunJunTi-Bold-2.ttf);
+}
+
+@font-face {
+    font-family: BoBoHei;
+    src: url(../font/JingNanBoBoHei-Bold-2.ttf);
+}
+
+/* --- 页面整体布局 --- */
+.bodybox {
+    margin: 0;
+    padding: 0;
+    height: 100dvb;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-family: 'Segoe UI', 'BoBoHei', sans-serif;
+    background: url("../img/index.png") center/cover no-repeat ;
+    grid-template-rows: 1fr 1fr 0.5fr 2.5fr;
+}
+
+/* --- 时间样式 --- */
+.time-container {
+    grid-row: 1;
+    text-align: center;
+    color: #FFF;
+}
+.time {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+.date {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #FFF;
+}
+
+/* --- 搜索框区域样式 --- */
+.search-container {
+    grid-row: 2;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(255,255,255, 0.1);
+}
+input[type="text"] {
+    width: 500px;
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    font-family: 'Segoe UI', 'BoBoHei', sans-serif;
+    font-size: small;
+    font-width: 10px;
+}
+input[type="text"]:focus {
+    width: 540px;
+    border-color: #00d4b8;
+    box-shadow: 0 0 15px rgba(0, 120, 212, 0.2);
+}
+
+/* --- 按钮区域样式 --- */
+.button-container {
+    grid-row: 3;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+button {
+    font-family: JunJunTi;
+    font-weight: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+}
+button:hover {
+    background: #00d4b8;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
